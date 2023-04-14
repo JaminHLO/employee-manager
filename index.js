@@ -13,21 +13,22 @@ const mainMenuObject = {
     name: 'choice',
     message: 'What would you like to do?',
     choices: ['View All Departments', 'View All Roles', 'View All Employees',
-        'Add a Department', 'Add a Role', 'Add an Employee', 'Update an Employee Role']
+        'Add a Department', 'Add a Role', 'Add an Employee', 'Update an Employee Role', 
+        'Update an Employee Manager']
 };
 
 // function that creates SQL query and updates entries in database
 // @queryType: what we're updating
 // @questions: what we're asking user
-// @emmployeeArray: array of employees to search for an id
+// @employeeArray: array of employees to search for an id
 // @toSearchArray: array of either roles or managers to search for an id
-function promptUserUpdate (queryType, questions, emmployeeArray, toSearchArray) {
+function promptUserUpdate (queryType, questions, employeeArray, toSearchArray) {
     // start prompt of update questions
     inquirer.prompt(questions).then(async (answers) => {
         let queryString = `UPDATE employee `;
         // console.log(`We're going to ADD to ${queryType}`);
         // console.log(answers);
-        let employee_id = 1 + (emmployeeArray.indexOf(answers.employee));
+        let employee_id = 1 + (employeeArray.indexOf(answers.employee));
         switch(queryType){
             case "role":
                 let role_id = 1 + (toSearchArray.indexOf(answers.role));
@@ -229,7 +230,7 @@ function queryDB (answer) {
             }
         });
     } else {
-        console.log("\nerror");
+        console.log("\nGoodbye.");
         return;
     }
     // Query database
@@ -245,10 +246,11 @@ function queryDB (answer) {
     }
 }
 
+
 // display mainMenu based on const object mainMenuObject
 function mainMenu () {
     // start prompt of questions
-    inquirer.prompt(mainMenuObject).then(async (answers) => {
+    inquirer.prompt(mainMenuObject).then( (answers) => {
         queryDB(answers);
     })
     .catch((error) => {
@@ -257,17 +259,16 @@ function mainMenu () {
         } else {
             console.log(error);
         }
-    })
+    });
 }
 
 // basic init function to display out ascii logo then mainMenu
-function init() {
+async function init() {
     // display ascii logo
     console.log(logo(config).render());
 
     // start prompt of questions
-    mainMenu();
-
+    await mainMenu();
 }
 
 // Function call to initialize app
