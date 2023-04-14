@@ -12,6 +12,7 @@
     "mysql2": "^2.2.5",
     "inquirer": "^8.2.4",
     "console.table": "^0.10.0",
-    "asciiart-logo": "^0.2.6"
+    "asciiart-logo": "^0.2.6",
+    "dotenv": "^8.2.0"
   }
 }
