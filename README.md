@@ -10,13 +10,13 @@ This Project is an employee manager that organizes a company's departments, role
 
 Users will need to install the npm libraries as defined in the included package.json file. Also please create a .env file including entries for the employee_db database as well as your mysql username and password.
 Set-Up CLI Commands from project root directory:
->npm i 
->cd db
->mysql -u root -p // when prompted enter your mysql password
->SOURCE schema.sql
->SOURCE seeds.sql
->cd ..
->node index.js
+>npm i <br>
+>cd db<br>
+>mysql -u root -p // when prompted enter your mysql password<br>
+>SOURCE schema.sql<br>
+>SOURCE seeds.sql<br>
+>cd ..<br>
+>node index.js<br>
 
 ## Usage
 
