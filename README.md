@@ -20,7 +20,7 @@ Set-Up CLI Commands from project root directory:
 
 ## Usage
 
-A Demonstration Video showing the setup and functionality of the program is available here: <https://www.loom.com/share/ab1d6bda64bb4602aa76b2230924451d> 
+A Demonstration Video showing the setup and functionality of the program is available here: <https://www.loom.com/share/ab1d6bda64bb4602aa76b2230924451d> <br>
 Otherwise, the program is initialized from the CLI in the project root directory with:
 >node index.js
 
