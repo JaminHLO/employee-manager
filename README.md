@@ -4,7 +4,7 @@
 
 ## Description
     
-The Project is a employee manager that organiza a company's departments, roles, employees and managers. It is built with javascript with a SQL backend. It uses the inquirer, asciiart-logo, dotenv, and mysql libraries and operates from the CLI. 
+This Project is an employee manager that organizes a company's departments, roles, employees and managers. It is built with javascript with a SQL backend. It uses the inquirer, asciiart-logo, dotenv, and mysql libraries and operates from the CLI. 
     
 ## Installation
 
@@ -20,7 +20,7 @@ Set-Up CLI Commands from project root directory:
 
 ## Usage
 
-A Demonstration Video showing the setup and functionality of the program is available here: <https://www.loom.com/share/5ae6c3890741488e98adc126cd24df96> 
+A Demonstration Video showing the setup and functionality of the program is available here: <https://www.loom.com/share/ab1d6bda64bb4602aa76b2230924451d> 
 Otherwise, the program is initialized from the CLI in the project root directory with:
 >node index.js
 
