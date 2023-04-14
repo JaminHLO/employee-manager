@@ -40,7 +40,7 @@ For a good resource for javascript debugging and error messages, check out:
 
 ## Tests
 
-The Project may tested running 'node index.js'and then using MySQL WOrkbench 6.0 CE to confirm the status of db. Please see the Demonstration Video above for a walkthrough.
+The Project may tested running 'node index.js'and then using MySQL Workbench 6.0 CE to confirm the status of the database. Please see the Demonstration Video above for a walkthrough.
 
 ## Questions
 
